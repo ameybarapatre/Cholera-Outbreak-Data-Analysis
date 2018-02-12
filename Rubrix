@@ -1,0 +1,25 @@
+For a C you need to:
+read in choleraDeaths.tsv data file
+create a Shiny dashboard using R scaled to the classroom wall showing:
+table of attacks and deaths by date, showing numbers per day and totals of both on each day
+line chart of attacks and deaths, per day and totals of both on that day (note that R has a cumulative sum function that might come in handy), making a total of 4 lines on the chart
+allow the user to bring up information on the webpage about who wrote the project, what libraries are being used to visualize it, where the data came from, etc.
+
+For a B you need to add:
+
+read in naplesCholeraAgeSexData.tsv showing fatality numbers for men and women in different age groups from the same time
+show a table of male vs female fatalities
+show a pie chart of male vs female fatalities
+show a bar chart of male vs female fatalities
+show a table of age categories for male and female fatalities
+show a pie chart of age categories for male and female fatalities
+show a bar chart of age categories for male and female fatalities
+
+For an A you need to add:
+read in choleraDeathLocations.csv and choleraPumpLocations.csv
+show a map of the deaths and pumps on a leaflet map of the current London neighborhood using an appropriately centered leaflet map
+
+Graduate Students need to add:
+read in the SnowMapRobinWilson.jpg map (converted by robin@rtwilson.com, www.rtwilson.com/academic to make it match better with the lat lon coordinates)
+show a map of deaths and pumps on the original map (note that your plots should match up with Snows, though you will most likely be showing those fatalities in a different way)
+allow the user to hover over fatality locations to get data on the number deaths at that location
