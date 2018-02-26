@@ -1,9 +1,5 @@
-# sample R + Shiny example for CS 424 Spring 2018 UIC - Andy Johnson
-# www.evl.uic.edu/aej/424
 
-# This is a sample dashboard making use of the evl room temperature data and displaying
-# it in a variery of ways to show off some of the different capabilities of R and Shiny
-# and the Shiny Dashboard.
+
 
 #libraries to include
 require(plyr)
@@ -268,7 +264,7 @@ output$tab2 <- DT::renderDataTable(
 
 
 
-# read in a jpeg map of the lab to show the room layout and plot some text on it
+# open map
 output$jpeg <- renderLeaflet({
   pumps <-read.csv("choleraPumpLocations.csv", header=FALSE)
 content<-paste0("<strong>Pump</strong>")
@@ -289,7 +285,7 @@ leaflet() %>%
                                               
 })
 
-# add a leaflet map 
+# custom tiles 
 output$leaf <- renderLeaflet({
   pumps <-read.csv("choleraPumpLocations.csv", header=FALSE)
 content<-paste0("<strong>Pump</strong>")
